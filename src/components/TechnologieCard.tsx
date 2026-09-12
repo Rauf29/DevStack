@@ -1,5 +1,6 @@
 import { type Dispatch, type SetStateAction } from "react";
 import { FaStar } from "react-icons/fa";
+import { Bounce, toast } from "react-toastify";
 import type { Technologie } from "../type/technologie";
 interface TechnologieProps {
     technologie: Technologie;
@@ -13,7 +14,17 @@ const TechnologieCard = ({ technologie, stack, setStack }: TechnologieProps) => 
     const handleAddToStack = (technologie: Technologie
     ) => {
         setStack([...stack, technologie]);
-        
+        toast.success(`${technologie.name} is purchased successfully`, {
+            position: "bottom-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     }
 
 
@@ -55,8 +66,9 @@ const TechnologieCard = ({ technologie, stack, setStack }: TechnologieProps) => 
                 <button
                     onClick={() => handleAddToStack(technologie)}
                     disabled={isAddedToStack}
-                    className="mt-3 w-full rounded-md bg-gray-950 py-2 text-[14px] text-white transition hover:bg-brand cursor-pointer">
+                    className={`mt-3 w-full rounded-md py-2 text-[14px] text-white transition hover:bg-brand ${isAddedToStack ? 'bg-brand cursor-not-allowed' : 'bg-gray-900 cursor-pointer'}`}>
                     {isAddedToStack === true ? "Selected" : "Add to Stack"}
+
                 </button>
             </div>
         </div>

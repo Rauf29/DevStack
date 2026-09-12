@@ -1,5 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
 import { RxCross2 } from "react-icons/rx";
+import { Bounce, toast } from "react-toastify";
 import type { Technologie } from "../type/technologie";
 interface TechnologieProps {
     stack: Technologie[];
@@ -12,6 +13,17 @@ const SideBar = ({ stack, setStack
     const handleRemoveFromStack = (technologie: Technologie) => {
         const updatedStack = stack.filter((item) => item.name !== technologie.name);
         setStack(updatedStack);
+        toast.success(`${technologie.name} is removed from stack`, {
+            position: "bottom-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     }
 
     return (
@@ -66,7 +78,20 @@ const SideBar = ({ stack, setStack
             </div>
 
             <button
-                onClick={() => setStack([])}
+                onClick={() => {
+                    toast.success("All technologies are removed from stack", {
+                        position: "bottom-right",
+                        autoClose: 3000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: false,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "light",
+                        transition: Bounce,
+                    });
+                    setStack([]);
+                }}
                 className="mt-4 w-full rounded-md border border-red-200 py-2 text-[14px] font-semibold text-red-500 hover:bg-red-50 cursor-pointer">
                 Remove All
             </button>

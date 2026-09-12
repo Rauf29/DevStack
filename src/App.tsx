@@ -1,7 +1,7 @@
 import { Suspense, useState } from 'react';
 import './App.css';
 import CardSection from './components/CardSection';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Nav from './components/Nav';
 import type { Technologie } from './type/technologie';
