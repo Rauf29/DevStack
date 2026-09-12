@@ -12,7 +12,6 @@ const CardSection = ({ technologiesPromise }: TechnologieProps) => {
 
 
 
-
     return (
         <section className='px-4 pb-10 md:pb-24 border-b border-gray-200'>
             <div className='container mx-auto'>

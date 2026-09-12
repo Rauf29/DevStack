@@ -6,7 +6,8 @@ interface TechnologieProps {
     setStack: Dispatch<SetStateAction<Technologie[]>>;
 
 }
-const SideBar = ({ stack, setStack }: TechnologieProps) => {
+const SideBar = ({ stack, setStack
+}: TechnologieProps) => {
 
     const handleRemoveFromStack = (technologie: Technologie) => {
         const updatedStack = stack.filter((item) => item.name !== technologie.name);
@@ -16,11 +17,11 @@ const SideBar = ({ stack, setStack }: TechnologieProps) => {
     return (
         <aside className='h-fit rounded-2xl border border-gray-300 shadow-xs p-5'>
 
-            <h3 className='text-base font-bold text-gray-900 mb-1'>
+            <h3 className='text-lg font-bold text-gray-900 mb-1'>
                 Your Stack
             </h3>
 
-            <p className="mb-4 text-[12px] text-gray-400">
+            <p className="mb-4 text-[14px] text-gray-400">
                 {stack.length === 0 ? "No technologies selected yet." : `${stack.length} Technology Selected`}
             </p>
 
@@ -28,7 +29,7 @@ const SideBar = ({ stack, setStack }: TechnologieProps) => {
             <div className="space-y-2 mb-8">
                 {stack.length === 0 && (
                     <div className="flex items-center justify-center rounded-md border border-gray-200 px-3 py-4">
-                        <p className="text-[12px] font-normal text-gray-600">
+                        <p className="text-[14px] font-normal text-gray-600">
                             Your stack is empty
                         </p>
 
@@ -37,15 +38,15 @@ const SideBar = ({ stack, setStack }: TechnologieProps) => {
                 {stack.map((technologie: Technologie, ind: number) => {
                     return (
                         <div key={ind} className="flex items-center justify-between rounded-md border border-gray-200 px-3 py-2">
-                            <div className="flex items-center gap-2">
+                            <div className="flex items-center gap-3">
                                 <span><img src={technologie.icon} alt="" /></span>
 
                                 <div>
-                                    <p className="text-[12px] font-bold">
+                                    <p className="text-[14px] font-bold">
                                         {technologie.name}
                                     </p>
 
-                                    <p className="text-[8px] text-gray-400">
+                                    <p className="text-[10px] text-gray-400">
                                         {technologie.category}
                                     </p>
                                 </div>
