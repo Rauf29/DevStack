@@ -37,10 +37,10 @@ function App() {
             </div>
 
             <div className='flex items-center gap-3'>
-              <button className='tetst-gray-800 text-sm transition-colors hover:text-brand cursor-pointer'>
+              <button className='tetst-gray-800 text-sm transition-colors duration-300 hover:text-brand cursor-pointer'>
                 Sign In
               </button>
-              <button className='rounded-full bg-brand px-4 py-2 text-sm text-white transition-colors cursor-pointer hover:bg-black'>
+              <button className='rounded-full bg-brand px-4 py-2 text-sm text-white transition-colors duration-300 cursor-pointer hover:bg-black'>
                 Sign Up
               </button>
             </div>
@@ -66,8 +66,8 @@ function App() {
                 fits your next project.
               </p>
               <div className=' space-x-2 mt-10'>
-                <button className=' w-[168px] cursor-pointer rounded-md bg-gradient-to-r from-orange-500 to-brand px-4 py-3 text-sm font-semibold text-white transition-colors hover:bg-black'>Explore Technologies</button>
-                <button className=' w-[168px] cursor-pointer rounded-md border bg-white border-gray-200 px-4 py-3 text-sm text-gray-600 transition-colors hover:border-brand hover:text-brand'>Learn More</button>
+                <button className=' w-[168px] cursor-pointer rounded-md bg-gradient-to-r from-orange-500 to-brand px-4 py-3 text-sm font-semibold text-white hover:bg-black transition-colors duration-500 hover:bg-gradient-to-l hover:from-brand hover:to-orange-500'>Explore Technologies</button>
+                <button className=' w-[168px] cursor-pointer rounded-md border bg-white border-gray-200 px-4 py-3 text-sm text-gray-600 transition-colors duration-300 hover:border-brand hover:text-brand'>Learn More</button>
               </div>
             </div>
 
@@ -97,7 +97,7 @@ function App() {
 
               {/* Card */}
 
-              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors hover:border-pink-400 hover:bg-pink-50'>
+              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors duration-300 hover:border-pink-400 hover:bg-pink-50'>
                 <div className='space-y-5'>
                   <div className='mb-3 flex items-center justify-between mb-2'>
                     <span>
@@ -137,7 +137,7 @@ function App() {
                 </div>
               </div>
 
-              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors hover:border-pink-400 hover:bg-pink-50'>
+              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors duration-300 hover:border-pink-400 hover:bg-pink-50'>
                 <div className='space-y-5'>
                   <div className='mb-3 flex items-center justify-between mb-2'>
                     <span>
@@ -177,7 +177,7 @@ function App() {
                 </div>
               </div>
 
-              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors hover:border-pink-400 hover:bg-pink-50'>
+              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors duration-300 hover:border-pink-400 hover:bg-pink-50'>
                 <div className='space-y-5'>
                   <div className='mb-3 flex items-center justify-between mb-2'>
                     <span>
@@ -217,7 +217,7 @@ function App() {
                 </div>
               </div>
 
-              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors hover:border-pink-400 hover:bg-pink-50'>
+              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors duration-300 hover:border-pink-400 hover:bg-pink-50'>
                 <div className='space-y-5'>
                   <div className='mb-3 flex items-center justify-between mb-2'>
                     <span>
@@ -257,7 +257,7 @@ function App() {
                 </div>
               </div>
 
-              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors hover:border-pink-400 hover:bg-pink-50'>
+              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors duration-300 hover:border-pink-400 hover:bg-pink-50'>
                 <div className='space-y-5'>
                   <div className='mb-3 flex items-center justify-between mb-2'>
                     <span>
@@ -297,7 +297,7 @@ function App() {
                 </div>
               </div>
 
-              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors hover:border-pink-400 hover:bg-pink-50'>
+              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors duration-300 hover:border-pink-400 hover:bg-pink-50'>
                 <div className='space-y-5'>
                   <div className='mb-3 flex items-center justify-between mb-2'>
                     <span>
@@ -337,7 +337,7 @@ function App() {
                 </div>
               </div>
 
-              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors hover:border-pink-400 hover:bg-pink-50'>
+              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors duration-300 hover:border-pink-400 hover:bg-pink-50'>
                 <div className='space-y-5'>
                   <div className='mb-3 flex items-center justify-between mb-2'>
                     <span>
@@ -377,7 +377,7 @@ function App() {
                 </div>
               </div>
 
-              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors hover:border-pink-400 hover:bg-pink-50'>
+              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors duration-300 hover:border-pink-400 hover:bg-pink-50'>
                 <div className='space-y-5'>
                   <div className='mb-3 flex items-center justify-between mb-2'>
                     <span>
@@ -417,7 +417,7 @@ function App() {
                 </div>
               </div>
 
-              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors hover:border-pink-400 hover:bg-pink-50'>
+              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors duration-300 hover:border-pink-400 hover:bg-pink-50'>
                 <div className='space-y-5'>
                   <div className='mb-3 flex items-center justify-between mb-2'>
                     <span>
@@ -457,7 +457,7 @@ function App() {
                 </div>
               </div>
 
-              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors hover:border-pink-400 hover:bg-pink-50'>
+              <div className=' rounded-2xl border border-gray-200 p-5 flex flex-col justify-between transition-colors duration-300 hover:border-pink-400 hover:bg-pink-50'>
                 <div className='space-y-5'>
                   <div className='mb-3 flex items-center justify-between mb-2'>
                     <span>
@@ -530,7 +530,7 @@ function App() {
                     </div>
                   </div>
 
-                  <button className="text-gray-400 hover:text-red-500 cursor-pointer">
+                  <button className="text-gray-400 hover:text-red-500 transition-colors duration-300 cursor-pointer">
                     <RxCross2 />
                   </button>
                 </div>
@@ -548,20 +548,123 @@ function App() {
         </div>
       </section>
 
-      <footer className='py-10 px-4 md:py-24'>
+      <footer className='pt-10 pb-3 px-4 md:pt-24'>
         <div className='container mx-auto'>
 
-          <div className='grid gap-10 pb-12 md:grid-cols-2 lg:grid-cols-4'>
+          <div className='grid gap-10 pb-12 md:grid-cols-2 lg:grid-cols-5'>
 
             <div className='lg:col-span-2'>
               <img src={logo} alt="" />
-              <p className="mt-4 max-w-md text-sm leading-5 text-gray-500">
+              <p className="mt-4 max-w-md text-sm text-gray-500">
                 Curated tools, technologies, and resources for developers building
                 modern software.
               </p>
+
+              <div className="mt-8 flex items-center gap-5 text-sm text-gray-700">
+                <a href="#" className="hover:text-brand">
+                  GitHub
+                </a>
+
+                <a href="#" className="hover:text-brand">
+                  Twitter
+                </a>
+
+                <a href="#" className="hover:text-brand">
+                  LinkedIn
+                </a>
+              </div>
             </div>
 
+            <div>
+              <h3 className="text-sm font-bold uppercase text-gray-900">
+                Product
+              </h3>
 
+              <ul className="mt-5 space-y-3 text-sm text-gray-500">
+                <li>
+                  <a href="#" className="hover:text-brand">
+                    Home
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="hover:text-brand">
+                    Technologies
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="hover:text-brand">
+                    Projects
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-bold uppercase text-gray-900">
+                Company
+              </h3>
+
+              <ul className="mt-5 space-y-3 text-sm text-gray-500">
+                <li>
+                  <a href="#" className="hover:text-brand">
+                    About
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="hover:text-brand">
+                    Contact
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="hover:text-brand">
+                    Careers
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-bold uppercase text-gray-900">
+                Legal
+              </h3>
+
+              <ul className="mt-5 space-y-3 text-sm text-gray-500">
+                <li>
+                  <a href="#" className="hover:text-brand">
+                    Privacy Policy
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" className="hover:text-brand">
+                    Terms of Service
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+
+          <div className="flex flex-col gap-4 border-t border-gray-200 py-7 text-xs text-gray-400 md:flex-row md:items-center md:justify-between">
+
+            <p>
+              © 2026 Dev Stack. All rights reserved.
+            </p>
+
+            <div className="flex items-center gap-6">
+              <a href="#" className="hover:text-brand">
+                Privacy
+              </a>
+
+              <a href="#" className="hover:text-brand">
+                Terms
+              </a>
+            </div>
           </div>
         </div>
       </footer>
