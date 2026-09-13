@@ -20,7 +20,11 @@ function App() {
 
       <Hero />
 
-      <Suspense fallback={<h2>Loading.....</h2>}>
+      <Suspense fallback={
+        <div className='container flex items-center justify-center h-6/12'>
+          <div className="loader"></div>
+        </div>
+      }>
         <CardSection technologiesPromise={technologiesPromise} />
       </Suspense>
 
